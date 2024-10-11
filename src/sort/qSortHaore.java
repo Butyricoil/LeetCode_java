@@ -1,3 +1,5 @@
+package sort;
+
 public class qSortHaore {
 
     public int partition(int[] array, int left, int right) {

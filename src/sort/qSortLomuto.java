@@ -1,9 +1,11 @@
+package sort;
+
 public class qSortLomuto {
 
     public int partition(int[] array, int start, int end) {
         int left = start;
         for (int current = start; current < end; current++) {
-            if (array[current] <= array[end]) {
+            if (array[current] <= array[end]/*pivot*/) {
                 // Обмен элементов
                 int temp = array[left];
                 array[left] = array[current];
